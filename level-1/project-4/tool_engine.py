@@ -5,13 +5,6 @@ from google.genai import types
 
 
 def get_current_weather(location: str, unit: str = "celcius") -> str:
-    """
-    Gets the current weather for a given location.
-    
-    Args:
-        location: The city and state/country, e.g. 'San Francisco, CA' or 'Tokyo, Japan'.
-        unit: The temperature unit, either 'celcius' or ''fahrenheit.
-    """
     
     mock_data = {
         "tokyo": f"18 degrees {unit}, rainy",

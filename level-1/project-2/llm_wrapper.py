@@ -7,6 +7,7 @@ def generate_response(prompt: str, system_instruction:str = "You are a concise A
     load_dotenv()
     
     api_key = os.getenv("GEMINI_API_KEY")
+    
     if not api_key:
         raise ValueError("Error: GEMINI_API_KEY not found. Please check your .env file")
     
